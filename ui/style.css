@@ -1,0 +1,130 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #2d2a2e;
+  color: #fcfcfa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0em auto 0 auto;
+  padding: 2em;
+  box-sizing: border-box;
+}
+h1{
+  font-family: "Chango", cursive;
+  color: #ffffff;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0.0em;
+  font-weight: bold;
+  user-select: none;
+}
+h2 {
+  color: #b8b8b8;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 0.5em;
+  user-select: none;
+}
+h3 {
+  color: #b8b8b8;
+  user-select: none;
+  border-left: #fd2a5f 3px solid;
+  border-radius: 3px;
+padding-left: .5em;
+  margin-bottom: 0.5em;
+}
+textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #403e41;
+  color: #fcfcfa;
+  resize: none;
+  outline: none;
+  font-size: 1.5em;
+  box-sizing: border-box;
+}
+textarea:focus {
+  background-color: #4b474b;
+  outline: 2px solid #dddddd;
+}
+button {
+  background-color: #fd2a5f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s, background-color 0.2s;
+
+}
+button:hover {
+  background-color: #ff79a2;
+  transform: scale(1.1);
+}
+button:active {
+  background-color: #fd2a5f;
+  transform: scale(0.95);
+}
+.visual-output {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  background: #403e41;
+  padding: 1.2em;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-x: auto;
+  overflow-y: auto;
+  color: #fcfcfa;
+  white-space: pre-wrap;
+  display: block;
+}
+.visual-word {
+  /* underline color is set in js */
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
+  margin-right: 0.15em;
+  display: inline-block;
+}
+.visual-word:hover {
+  text-decoration-thickness: 5.25px;
+}
+pre {
+  background: #403e41;
+  padding: 1.5em;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 300px;
+  color: #fcfcfa;
+}
+pre:empty {
+  display: none;
+}
+.footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #232124;
+  color: #999999;
+  text-align: center;
+  font-size: 1em;
+  padding: 0.5em;
+  z-index: 100;
+  user-select: none;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+}
+.footer a {
+  color: #fd2a5f; /* or any color you prefer */
+  text-decoration: none; /* optional: removes underline */
+}
