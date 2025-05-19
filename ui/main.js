@@ -1,5 +1,5 @@
-import { buildMorphTrie, findMorphsFromTrie } from '/core/trie.js';
-import { buildPosMap, viterbiSegment } from '/core/viterbi.js';
+import { buildMorphTrie, findMorphsFromTrie } from '../core/trie.js';
+import { buildPosMap, viterbiSegment } from '../core/viterbi.js';
 
 // Load dictionary JSON from file
 async function loadDictionary(path) {
