@@ -1,5 +1,5 @@
-import { buildMorphTrie, findMorphsFromTrie } from '../core/trie.js';
-import { buildPosMap, viterbiSegment } from '../core/viterbi.js';
+import { buildMorphTrie, findMorphsFromTrie } from '/core/trie.js';
+import { buildPosMap, viterbiSegment } from '/core/viterbi.js';
 
 // Load dictionary JSON from file
 async function loadDictionary(path) {
@@ -20,11 +20,11 @@ async function loadUserMorphs(path) {
     (userData.morphs || []).map(m => `${m.morph}|${m.pos}`)
   );
 }
-loadUserMorphs('../user/user.json').catch(err => {
+loadUserMorphs('/user/user.json').catch(err => {
   // TODO: handle user morph load error
 });
 
-loadDictionary('../dict/jp.json').then(data => {
+loadDictionary('/dict/jp.json').then(data => {
   dict = data;
   trie = buildMorphTrie(dict.morphs);
   posMap = buildPosMap(dict.morphs);
