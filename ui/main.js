@@ -20,11 +20,11 @@ async function loadUserMorphs(path) {
     (userData.morphs || []).map(m => `${m.morph}|${m.pos}`)
   );
 }
-loadUserMorphs('/user/user.json').catch(err => {
+loadUserMorphs('./user/user.json').catch(err => {
   // TODO: handle user morph load error
 });
 
-loadDictionary('/dict/jp.json').then(data => {
+loadDictionary('./dict/jp.json').then(data => {
   dict = data;
   trie = buildMorphTrie(dict.morphs);
   posMap = buildPosMap(dict.morphs);
